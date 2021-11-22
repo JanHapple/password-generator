@@ -58,28 +58,6 @@ const generatePassword = event => {
     }
 };
 
-/*
-let count = 0;
-
-const insert = () => {
-    let length = inputField.value;
-    
-    if (Number(length) === 0 || Number(length) < 0) {
-        length = 20;
-    }
-
-    output.textContent = generatePassword(Number(length));
-    
-    if (count % 2 == 0) {
-        count++;
-        output.style.backgroundColor = 'rgba(190, 190, 190, 0.2)';
-    } else {
-        count++;
-        output.style.backgroundColor = 'rgba(0, 133, 0, 0.2)';
-    }    
-};
-*/
-
 inputField.addEventListener('change', generatePassword);
 //button.addEventListener('click', insert);
 buttons.forEach(button => button.addEventListener('click', generatePassword));
