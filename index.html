@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Don't forget to add a link to your CSS file! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <!-- Your code goes here -->
+    <h1>Password Generator</h1>
+    <p class="output"></p>
+
+    <div class="labelclass">
+        <input type="number" id="passwordlength" value="0">
+        <div class="input">
+            <input id="check" type="checkbox" checked>
+            <label for="check">Use mixed cases?</label>
+        </div>
+    </div>
+
+    <button id="create-password" class="button">Generate Password !</button>
+    <button class="button">I feel lucky!</button>
+    <!-- Don't forget to add a <script> linking to your JS file! -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
